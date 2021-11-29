@@ -1,5 +1,6 @@
 import React from 'react'
 import {Navbar,Container,Nav,NavDropdown, Brand, Toggle,Collapse,Link} from 'react-bootstrap'
+import LoginIcon from '@mui/icons-material/Login';
 
 function Header() {
     return (
@@ -10,7 +11,7 @@ function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#about">ABOUT</Nav.Link>
+                            <Nav.Link href="/About">ABOUT</Nav.Link>
                             <Nav.Link href="#products">PRODUCTS</Nav.Link>
                             <Nav.Link href="#catalogue">CATALOGUE</Nav.Link>
                             <Nav.Link href="#contacts">CONTACTS</Nav.Link>
@@ -23,7 +24,9 @@ function Header() {
                             </NavDropdown> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#login"><i class="fa fa-sign-in-alt"><b>Log In</b></i></Nav.Link>
+                            <Nav.Link href="#login"><i className="fa fa-sign-in"><b>Log In</b></i>&nbsp;<LoginIcon style={{color:'white'}}/></Nav.Link>
+                            &nbsp;
+                           
                             <Nav.Link eventKey={2} href="#memes">
                                 <b>SignUp</b>
                             </Nav.Link>
