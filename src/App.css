@@ -3511,3 +3511,9 @@ ol {
 	background-color: black;
 	padding: 40px;
 }
+.cards_height{
+	height: 100%;
+}
+.card_images{
+	height: 80%;
+}
