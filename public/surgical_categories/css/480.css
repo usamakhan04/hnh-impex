@@ -1,0 +1,165 @@
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* Navigations
+---------------------------------------- */
+
+/* Primary navigation */
+
+.main-wrap {
+	max-width: 460px;
+}
+/* Logo */
+.logo {
+}
+.logo img{
+	height:auto;
+	}
+	.logo .tagline {
+		display:block;
+	}
+	
+/* Primary navigation */	
+.select-menu {
+	display: block !important;
+}
+
+#top-search .input-search {
+	width: 381px;
+}
+
+/* Slider
+---------------------------------------- */
+.flexslider-holder {
+	height:194px;
+	}
+
+/* Flickr widget */
+.flickrImages a {
+	width:69px;
+	height:69px;
+	}
+
+/* Post */
+.post-meta .fright {
+	float:right;
+	clear:none;
+	}
+
+.top-content-area .post_list li {
+	float: left;
+	width: 48%;
+	margin: 0 1% 10px;
+}
+.top-content-area .post_list li:nth-child(2n+1) {
+	clear: both;
+}
+
+#before-content-area .banners-holder li,
+#before-content-area .banners-holder li:first-child {
+	float: left;
+	width: 48%;
+	margin: 0 1% 10px;
+	text-align: center;
+}
+.top-content-area .post_list li .extra-wrap {
+	padding: 5px 10px;
+}
+.top-content-area .post_list li h4 {
+	font-weight: normal;
+}
+/* Images */
+.frame.alignleft,
+.frame.alignright,
+.frame.alignnone {
+	margin-right:0;
+	width:404px;
+	}
+	
+/* SlidesJS */
+.slides_container {
+	width:420px;
+}
+.slides_container .item {
+	width:420px;
+	height:250px;
+}
+.slides_container .item .thumbnail img {
+	width:100%;
+	height:auto;
+	}
+
+/* Comments */
+.commentlist ul.children {
+	margin-left:0;
+	}
+
+
+/* Post Formats
+---------------------------------------- */
+
+/* Image Post Format */
+
+
+/* Gallery Post Format */
+.slides_container_gallery {
+	width:420px;
+	height:200px;
+	}
+	.slides_container_gallery .g_item {
+		width:420px;
+		}
+
+/* Audio Format Type */
+.audiojs .scrubber {
+	width:248px;
+	}
+	
+		
+	
+	
+/* Sidebar
+---------------------------------------- */
+#searchform .searching {
+	width:260px;
+	}
+/* Shop settings
+---------------------------------------- */
+nav.shop-nav {
+	float: none;
+}
+#shopnav li {
+	display:inline-block;
+	float:none;
+}
+	.products li{
+		width:204px !important;
+		margin:0 2px 5px 2px !important;
+	}
+	.products li:nth-child(3n){
+		margin-right: 2px !important;
+	}
+	.products li.nomargin{
+		margin-right: 2px !important;
+	}
+	.products li .product-inner {
+		padding:10px !important;
+	}
+	.images {
+		width: 310px !important;
+		margin:0 auto !important;
+		float:none !important;
+	}
+	.product.type-product .images .sub-pager a{margin: 0 0px 0 5px;}
+	.product.type-product .images .sub-pager{padding-left: 0; padding:10px 0 10px 0;}
+
+
+.attributes .product-price {
+	font-size:16px !important;
+}
+.attributes .product-price .label {
+	
+}

@@ -1,0 +1,154 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; list-style-type:none; padding:0; margin:0; background: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; border-radius: 4px;}
+.flex-pauseplay span {text-transform: capitalize;}
+.flexslider-container { position:relative;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {background:#fff;  position: relative; zoom: 1; border-radius: 4px;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative; background: none; border: none !important;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+
+.flex-caption {
+	margin: 0; 
+	position: absolute; 
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	max-width: 60%;
+	font-size: 15px; 
+	line-height: 18px;
+	color: #fff;
+	background: url(../images/black-opacity-60.html);
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.flex-caption p {margin:0;}
+
+/* Direction Nav */
+.flex-direction-nav {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 50%;
+	bottom: 50%;
+}
+	.flex-direction-nav:after {
+		clear: both;
+		content: "";
+		width: 100%;
+		display: block;
+	}
+.flex-direction-nav li {
+	margin: -19px 0 0 0;
+	float: left;
+	padding: 0;
+	background: none;
+	border: none !important;
+}
+.flex-direction-nav li + li {
+	float: right;
+}
+.flex-direction-nav li a {
+	font-size: 30px;
+	color: #595858;
+	cursor: pointer;
+	-webkit-transition:all 200ms linear;
+-moz-transition:all 200ms linear;
+-ms-transition:all 200ms linear;
+-o-transition:all 200ms linear;
+transition:all 200ms linear;
+}
+.flex-direction-nav li a:before {
+	cursor: pointer;
+	-webkit-transition:all 200ms linear;
+-moz-transition:all 200ms linear;
+-ms-transition:all 200ms linear;
+-o-transition:all 200ms linear;
+transition:all 200ms linear;
+}
+.flex-direction-nav li a:hover {
+	color: #387e98;
+}
+/* Control Nav */
+.flex-control-nav {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.flex-control-nav li {
+	margin: 0 0 0 5px; 
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+	background: none;
+}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {
+	font-size: 17px;
+	color: #595858;
+	cursor: pointer;
+	-webkit-transition:all 200ms linear;
+-moz-transition:all 200ms linear;
+-ms-transition:all 200ms linear;
+-o-transition:all 200ms linear;
+transition:all 200ms linear;
+}
+	.flex-control-nav li a:before {
+		cursor: pointer;
+		-webkit-transition:all 200ms linear;
+-moz-transition:all 200ms linear;
+-ms-transition:all 200ms linear;
+-o-transition:all 200ms linear;
+transition:all 200ms linear;
+	}
+.flex-control-nav li a:hover {
+	color: #387e98;
+}
+.flex-control-nav li a.active {
+	color: #387e98;
+	cursor: default;	
+}
+.flex-control-nav li a.active:before {
+	cursor: default;
+}

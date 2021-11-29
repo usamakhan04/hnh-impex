@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import '../src/assets/css/styles.css'
+import '../src/assets/css/320.css'
+// import '../src/assets/css/480.css'
+import '../src/assets/css/768.css'
+// import '../src/assets/css/flexslider.css'
+// import '../src/assets/css/normalize.css'
+// import '../src/assets/css/prettyPhoto.css'
+import '../src/assets/css/skeleton.css'
+// import '../src/assets/css/touchTouch.css'
+// import '../src/assets/css/ui.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home/>
     </div>
   );
 }
