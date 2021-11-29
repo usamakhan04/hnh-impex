@@ -11,14 +11,29 @@ import '../src/assets/css/skeleton.css'
 // import '../src/assets/css/touchTouch.css'
 // import '../src/assets/css/ui.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import About from './components/About';
+import Products from './components/Products';
+import Catalogue from './components/Catalogue';
+import Contact from './components/Contact';
 
 
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/products" element={<Products/>}/>
+        <Route path="/catalogue" element={<Catalogue/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        {/* <Route path="/about" component={}></Route> */}
+      </Routes>
+      
+      </BrowserRouter>
+    </>
   );
 }
 
