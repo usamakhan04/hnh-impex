@@ -4,6 +4,7 @@ import $ from "jquery";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import HnH from "../../src/assets/hnh.mp4"
 
 function MainContent() {
   // $('.hero__categories__all').on('click', function(){
@@ -23,16 +24,21 @@ function MainContent() {
                 </div> */}
                 <Card className="listGroup_card_width">
                   <ListGroup >
-                    <ListGroup.Item style={{backgroundColor:"black"}} className="text-white"><b>ALL CATEGORIES</b></ListGroup.Item>
+                    <ListGroup.Item style={{ backgroundColor: "black" }} className="text-white"><b>ALL CATEGORIES</b></ListGroup.Item>
                     <ListGroup.Item><Link className="listGroup_item_link" to="">DOWNLOADS </Link> <ChevronRightIcon /></ListGroup.Item>
-                    <ListGroup.Item><Link className="listGroup_item_link" to="">MATERIALS </Link> <ChevronRightIcon/></ListGroup.Item>
-                    <ListGroup.Item><Link className="listGroup_item_link" to="">ELECTRO </Link><ChevronRightIcon/></ListGroup.Item>
-                    <ListGroup.Item><Link className="listGroup_item_link" to="">BEAUTY </Link><ChevronRightIcon/></ListGroup.Item>
-                    <ListGroup.Item><Link className="listGroup_item_link" to="">BROCHURES </Link><ChevronRightIcon/></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">MATERIALS </Link> <ChevronRightIcon /></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">ELECTRO </Link><ChevronRightIcon /></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">BEAUTY </Link><ChevronRightIcon /></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">BROCHURES </Link><ChevronRightIcon /></ListGroup.Item>
                   </ListGroup>
                 </Card>
+                <video width="304" height="190" autoPlay muted controls>
+                  <source src={HnH} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
+
             <div className="col-lg-9">
               <Carousel fade>
                 <Carousel.Item>
@@ -84,7 +90,9 @@ function MainContent() {
                   src="./surgical_categories/medical-diagnostics-products.jpg"
                 />
                 <Card.Body>
-                  <Link to="" style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
+                    <hr />
+
                     <Card.Title>DENTAL</Card.Title>
                   </Link>
                 </Card.Body>
@@ -97,7 +105,8 @@ function MainContent() {
                   src="./surgical_categories/SR_065165.jpg"
                 />
                 <Card.Body>
-                  <Link to="" style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
+                    <hr />
                     <Card.Title>SURGICAL</Card.Title>
                   </Link>
                 </Card.Body>
@@ -110,7 +119,9 @@ function MainContent() {
                   src="./surgical_categories/s3k3m9.jpg"
                 />
                 <Card.Body>
-                  <Link to="" style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
+                    <hr />
+
                     <Card.Title>VETERINARY</Card.Title>
                   </Link>
                 </Card.Body>
@@ -123,7 +134,9 @@ function MainContent() {
                   src="./surgical_categories/utcs tungsten scissor.jpg"
                 />
                 <Card.Body>
-                  <Link to="" style={{ textDecoration: "none" }}>
+                  <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
+                    <hr />
+
                     <Card.Title>ORTHOPAEDIC</Card.Title>
                   </Link>
 

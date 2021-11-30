@@ -1,14 +1,21 @@
 import React from 'react'
-import {Navbar,Container,Nav,NavDropdown, Brand, Toggle,Collapse,} from 'react-bootstrap'
+import { Navbar, Container, Nav, NavDropdown, Brand, Toggle, Collapse, } from 'react-bootstrap'
 import LoginIcon from '@mui/icons-material/Login';
-import {Link} from 'react-router-dom'
+import AddIcon from '@mui/icons-material/Add';
+
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <img
+                    width="150" height="50"
+                    src="./surgical_categories/logo.png"
+
+                />
                 <Container>
-                    <Navbar.Brand ><Link style={{color:'#b6b8b6',textDecoration:'none'}} to="/">Home</Link></Navbar.Brand>
+                    <Navbar.Brand ><Link style={{ color: '#b6b8b6', textDecoration: 'none' }} to="/">Home</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -25,9 +32,14 @@ function Header() {
                             </NavDropdown> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#login"><b>Log In</b>&nbsp;<LoginIcon/></Nav.Link>&nbsp;
+                            
+                            <Nav.Link href="#login"><b>Log In</b>&nbsp;<LoginIcon /></Nav.Link>&nbsp;
                             <Nav.Link eventKey={2} href="#memes">
-                                <b>SignUp</b>
+
+                                <b>SignUp</b>&nbsp;<AddIcon />
+
+
+
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
