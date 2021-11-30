@@ -1,20 +1,21 @@
 import React from 'react'
-import {Navbar,Container,Nav,NavDropdown, Brand, Toggle,Collapse,Link} from 'react-bootstrap'
+import {Navbar,Container,Nav,NavDropdown, Brand, Toggle,Collapse,} from 'react-bootstrap'
 import LoginIcon from '@mui/icons-material/Login';
+import {Link} from 'react-router-dom'
 
 function Header() {
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Home</Navbar.Brand>
+                    <Navbar.Brand ><Link style={{color:'#b6b8b6',textDecoration:'none'}} to="/">Home</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/About">ABOUT</Nav.Link>
-                            <Nav.Link href="/products">PRODUCTS</Nav.Link>
-                            <Nav.Link href="/catalogue">CATALOGUE</Nav.Link>
-                            <Nav.Link href="/contact">CONTACTS</Nav.Link>
+                            <Nav.Link><Link className="links_color" to="/About">ABOUT</Link></Nav.Link>
+                            <Nav.Link><Link className="links_color" to="/products">PRODUCTS</Link></Nav.Link>
+                            <Nav.Link><Link className="links_color" to="/catalogue">CATALOGUE</Link></Nav.Link>
+                            <Nav.Link><Link className="links_color" to="/contact">CONTACTS</Link></Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -24,9 +25,7 @@ function Header() {
                             </NavDropdown> */}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#login"><i className="fa fa-sign-in"><b>Log In</b></i>&nbsp;<LoginIcon style={{color:'white'}}/></Nav.Link>
-                            &nbsp;
-                           
+                            <Nav.Link href="#login"><b>Log In</b>&nbsp;<LoginIcon/></Nav.Link>&nbsp;
                             <Nav.Link eventKey={2} href="#memes">
                                 <b>SignUp</b>
                             </Nav.Link>
