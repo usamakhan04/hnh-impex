@@ -3517,3 +3517,12 @@ ol {
 .card_images{
 	height: 80%;
 }
+.links_color{
+	color: #6e6d6d;
+	text-decoration: none;
+	transition: 0.1s ease-in;
+}
+.links_color:hover{
+	
+	color: #999999;
+}
