@@ -2,8 +2,7 @@ import React from "react";
 import Head from "../../../components/Head";
 import Header from "../../../components/Header";
 import DentalCategories from "../DentalCategories";
-
-const DentalInstruments = () => {
+const FillingInstruments = () => {
   return (
     <div>
       <Head />
@@ -15,7 +14,7 @@ const DentalInstruments = () => {
               <DentalCategories />
             </div>
             <div className="col-lg-9">
-              <h4 className="text-muted">DENTAL INSTRUMENTS</h4>
+              <h4 className="text-muted">ExtractingForceps INSTRUMENTS</h4>
               <hr />
               <div className="">{/* <Cards /> */}</div>
             </div>
@@ -27,4 +26,4 @@ const DentalInstruments = () => {
   );
 };
 
-export default DentalInstruments;
+export default FillingInstruments;

@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "../../../components/Head";
 import Header from "../../../components/Header";
-import DentalCategories from "../DentalCategories";
+import SurgicalCategories from "../SurgicalCategories";
 
-const DentalInstruments = () => {
+const PlasterInstruments = () => {
   return (
     <div>
       <Head />
@@ -12,7 +12,7 @@ const DentalInstruments = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
-              <DentalCategories />
+              <SurgicalCategories />
             </div>
             <div className="col-lg-9">
               <h4 className="text-muted">DENTAL INSTRUMENTS</h4>
@@ -27,4 +27,4 @@ const DentalInstruments = () => {
   );
 };
 
-export default DentalInstruments;
+export default PlasterInstruments;

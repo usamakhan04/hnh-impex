@@ -32,7 +32,7 @@ function MainContent() {
                     <ListGroup.Item><Link className="listGroup_item_link" to="">BROCHURES </Link><ChevronRightIcon /></ListGroup.Item>
                   </ListGroup>
                 </Card>
-                <video width="304" height="190" autoPlay muted controls>
+                <video className="video_width mt-3" autoPlay muted controls>
                   <source src={HnH} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
