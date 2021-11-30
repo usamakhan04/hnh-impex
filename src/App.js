@@ -16,6 +16,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Catalogue from './components/Catalogue';
 import Contact from './components/Contact';
+import DentalInstruments from './categories/Dental_Instruments/Dental_Instrument_Pages/DentalInstruments';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/products" element={<Products/>}/>
         <Route path="/catalogue" element={<Catalogue/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/DentalInstruments" element={<DentalInstruments/>}/>
         {/* <Route path="/about" component={}></Route> */}
       </Routes>
       

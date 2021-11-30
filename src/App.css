@@ -3518,11 +3518,21 @@ ol {
 	height: 80%;
 }
 .links_color{
-	color: #6e6d6d;
+	color: #858282;
 	text-decoration: none;
 	transition: 0.1s ease-in;
 }
 .links_color:hover{
-	
-	color: #999999;
+	color: #c4bdbd;
+}
+.listGroup_card_width{
+	width: auto;
+}
+.listGroup_item_link{
+	text-decoration: none;
+	color: black;
+}
+.listGroup_item_link:hover{
+	text-decoration: none;
+	color: rgb(117, 108, 108);
 }

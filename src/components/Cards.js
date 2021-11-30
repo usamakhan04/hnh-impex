@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
 
 const Cards = () => {
   const data = [
@@ -29,18 +30,7 @@ const Cards = () => {
       img: "./surgical_categories/medical-diagnostics-products.jpg",
       title: "Dental",
     },
-    {
-      img: "./surgical_categories/medical-diagnostics-products.jpg",
-      title: "Dental",
-    },
-    {
-      img: "./surgical_categories/medical-diagnostics-products.jpg",
-      title: "Dental",
-    },
-    {
-      img: "./surgical_categories/medical-diagnostics-products.jpg",
-      title: "Dental",
-    },
+    
   ];
   return (
     <div>
@@ -55,15 +45,11 @@ const Cards = () => {
                     
                       <div className="row justify-content-around">
                         <div className=" col-6 col-md-6 col-lg-6">
-                          <Card.Title>
-                            <Link to="" style={{ textDecoration: "none" }}>
-                              {currElem.title}
-                            </Link>
-                          </Card.Title>
+                        <Button variant="contained"> Details </Button>
                         </div>
 
                         <div className=" col-6 col-md-6 col-lg-6">
-                          <Button variant="outlined"> Add to Cart </Button>
+                          <Button variant="outlined"> BUY NOW </Button>
                         </div>
                       </div>
                   </Card.Body>

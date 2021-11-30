@@ -3,6 +3,7 @@ import { Card, ListGroup } from "react-bootstrap";
 import $ from "jquery";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 function MainContent() {
   // $('.hero__categories__all').on('click', function(){
@@ -16,23 +17,24 @@ function MainContent() {
           <div className="row">
             <div className="col-lg-3">
               <div className="hero__categories">
-                <div className="hero__categories__all">
+                {/* <div className="hero__categories__all">
                   <i className="fa fa-bars" />
                   <span>All departments</span>
-                </div>
-                <Card style={{ width: "18rem" }}>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>DOWNLOADS</ListGroup.Item>
-                    <ListGroup.Item>MATERIALS</ListGroup.Item>
-                    <ListGroup.Item>ELECTRO</ListGroup.Item>
-                    <ListGroup.Item>BEAUTY</ListGroup.Item>
-                    <ListGroup.Item>BROCHURES</ListGroup.Item>
+                </div> */}
+                <Card className="listGroup_card_width">
+                  <ListGroup >
+                    <ListGroup.Item style={{backgroundColor:"black"}} className="text-white"><b>ALL CATEGORIES</b></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">DOWNLOADS </Link> <ChevronRightIcon /></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">MATERIALS </Link> <ChevronRightIcon/></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">ELECTRO </Link><ChevronRightIcon/></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">BEAUTY </Link><ChevronRightIcon/></ListGroup.Item>
+                    <ListGroup.Item><Link className="listGroup_item_link" to="">BROCHURES </Link><ChevronRightIcon/></ListGroup.Item>
                   </ListGroup>
                 </Card>
               </div>
             </div>
             <div className="col-lg-9">
-              <Carousel>
+              <Carousel fade>
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
