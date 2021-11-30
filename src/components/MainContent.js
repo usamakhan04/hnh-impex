@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
 import $ from 'jquery'
 import Carousel from 'react-bootstrap/Carousel'
+import {Link} from 'react-router-dom'
 
 function MainContent() {
 
@@ -79,37 +80,42 @@ function MainContent() {
 
                     <div className="row">
                         <div className="col-md-3">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="./surgical_categories/medical-diagnostics-products.jpg" />
+                            <Card style={{ height: '15rem' }}>
+                                <Card.Img variant="top" height="100%" src="./surgical_categories/medical-diagnostics-products.jpg" />
                                 <Card.Body>
-                                    <Card.Title>DENTAL</Card.Title>
+                                    <Link to="" style={{textDecoration:'none'}}><Card.Title>DENTAL</Card.Title></Link>
                                     
                                 </Card.Body>
                             </Card>
                         </div>
                         <div className="col-md-3">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="./surgical_categories/SR_065165.jpg" />
+                            <Card style={{ height: '15rem' }}>
+                                <Card.Img variant="top" height="100%" src="./surgical_categories/SR_065165.jpg" />
                                 <Card.Body>
-                                    <Card.Title>SURGICAL</Card.Title>
-                                    
+                                    <Link to="" style={{textDecoration:'none'}}><Card.Title>SURGICAL</Card.Title></Link>
                                 </Card.Body>
                             </Card>
                         </div>
                         <div className="col-md-3">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="./surgical_categories/s3k3m9.jpg" />
+                            <Card style={{ height: '15rem' }}>
+                                <Card.Img variant="top" height="100%" src="./surgical_categories/s3k3m9.jpg" />
                                 <Card.Body>
+                                    <Link to="" style={{textDecoration:'none'}}>
                                     <Card.Title>VETERINARY</Card.Title>
+                                    </Link>
+                                    
                                     
                                 </Card.Body>
                             </Card>
                         </div>
                         <div className="col-md-3">
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="./surgical_categories/utcs tungsten scissor.jpg" />
+                            <Card style={{ height: '15rem' }}>
+                                <Card.Img variant="top" height="100%" src="./surgical_categories/utcs tungsten scissor.jpg" />
                                 <Card.Body>
+                                    <Link to="" style={{textDecoration:'none'}}>
                                     <Card.Title>ORTHOPAEDIC</Card.Title>
+                                    </Link>
+                                    
                                     {/* <Card.Text>
                                         Some quick example text to build on the card title and make up the bulk of
                                         the card's content.

@@ -4,7 +4,6 @@ import '../src/assets/css/320.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 // import '../src/assets/css/480.css'
 import '../src/assets/css/768.css'
 // import '../src/assets/css/flexslider.css'
@@ -13,9 +12,13 @@ import '../src/assets/css/768.css'
 import '../src/assets/css/skeleton.css'
 // import '../src/assets/css/touchTouch.css'
 // import '../src/assets/css/ui.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
 import About from './components/About';
+import Products from './components/Products';
+import Catalogue from './components/Catalogue';
+import Contact from './components/Contact';
 import Home from './Home';
-
 
 
 
@@ -23,11 +26,15 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<Home /> }/>
-          <Route path='/About' element={<About />}/>
-
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/products" element={<Products/>}/>
+        <Route path="/catalogue" element={<Catalogue/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        {/* <Route path="/about" component={}></Route> */}
+      </Routes>
+      
       </BrowserRouter>
     </>
   );

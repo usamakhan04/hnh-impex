@@ -6,8 +6,8 @@ function Head() {
     return (
         <div>
             <div className="top-row">
-                <div className="container_24">
-                    <div className="grid_24">
+                <div className="container">
+                    <div className="grid">
                         <div className="logo">
                             <a href="index-2.html" id="logo">
                                 <img src="./surgical_categories/logo.png" alt="Medical Equipment" title />
