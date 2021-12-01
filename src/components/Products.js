@@ -35,7 +35,7 @@ const Products = () => {
                       <ChevronRightIcon />
                     </ListGroup.Item>
                     <ListGroup.Item>
-                      <Link className="listGroup_item_link" to="">
+                      <Link className="listGroup_item_link" to="/SurgicalInstrument">
                         Surgical Instruments{" "}
                       </Link>{" "}
                       <ChevronRightIcon />
