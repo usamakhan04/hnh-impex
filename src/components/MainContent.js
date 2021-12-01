@@ -32,7 +32,7 @@ function MainContent() {
                     <ListGroup.Item><Link className="listGroup_item_link" to="">BROCHURES </Link><ChevronRightIcon /></ListGroup.Item>
                   </ListGroup>
                 </Card>
-                <video className="video_width mt-3" autoPlay muted controls>
+                <video className="video_width mt-3" autoPlay muted controls >
                   <source src={HnH} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -89,7 +89,7 @@ function MainContent() {
                   variant="top"
                   src="./surgical_categories/medical-diagnostics-products.jpg"
                 />
-                <Card.Body>
+                <Card.Body className="inp">
                   <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
                     <hr />
 
@@ -104,7 +104,7 @@ function MainContent() {
                   variant="top"
                   src="./surgical_categories/SR_065165.jpg"
                 />
-                <Card.Body>
+                <Card.Body className="inp">
                   <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
                     <hr />
                     <Card.Title>SURGICAL</Card.Title>
@@ -118,7 +118,7 @@ function MainContent() {
                   variant="top"
                   src="./surgical_categories/s3k3m9.jpg"
                 />
-                <Card.Body>
+                <Card.Body className="inp">
                   <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
                     <hr />
 
@@ -133,7 +133,7 @@ function MainContent() {
                   variant="top"
                   src="./surgical_categories/utcs tungsten scissor.jpg"
                 />
-                <Card.Body>
+                <Card.Body className="inp">
                   <Link to="" style={{ color: '#000000', textDecoration: 'none', textAlign: 'center' }}>
                     <hr />
 

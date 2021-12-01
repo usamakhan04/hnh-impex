@@ -3539,3 +3539,34 @@ ol {
 .video_width{
 	width: 100%;
 }
+
+ /* Hover start */
+
+.inp{
+    animation: mymove 5s infinite;
+}
+.inp0{
+    animation: mymove 2s infinite;
+}
+.inp1{
+    animation: mymove 3s infinite;
+}
+.inp2{
+    animation: mymove 4s infinite;
+}
+.inp3{
+    animation: mymove 5s infinite;
+}
+.inp4{
+    animation: mymove 2s infinite;
+}
+.inp5{
+    animation: mymove 3s infinite;
+}
+@keyframes mymove {
+    50% {
+       box-shadow: 10px 20px 30px rgb(72, 73, 70);
+   }
+}
+
+/* Hover End */
