@@ -19,7 +19,7 @@ function Footer() {
                             />
                             <Nav>
                                 <Navbar.Brand ><Link style={{ color: '#b6b8b6', textDecoration: 'none' }} to="#">H&H-Impex</Link></Navbar.Brand>
-                                <Navbar.Brand><Link style={{ color: '#b6b8b6', textDecoration: 'none' }} to="#">is proudly powered by turabiIndustries</Link></Navbar.Brand>
+                                <Navbar.Brand><p style={{ color: '#b6b8b6', textDecoration: 'none', paddingTop: "5px" }}>is proudly powered by turabiIndustries</p></Navbar.Brand>
 
                             </Nav>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
