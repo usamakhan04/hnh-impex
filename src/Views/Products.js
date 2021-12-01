@@ -1,7 +1,7 @@
 import React from "react";
-import Cards from "./Cards";
-import Header from "./Header";
-import Head from "./Head";
+import Cards from "../components/Cards";
+import Header from "../components/Header";
+import Head from "../components/Head";
 import { Card, ListGroup } from "react-bootstrap";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ const Products = () => {
                       <ChevronRightIcon />
                     </ListGroup.Item>
                     <ListGroup.Item>
-                      <Link className="listGroup_item_link" to="">
+                      <Link className="listGroup_item_link" to="/VeterinaryInstrument">
                         Veterinary Instruments{" "}
                       </Link>
                       <ChevronRightIcon />

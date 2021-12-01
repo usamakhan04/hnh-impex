@@ -3525,6 +3525,9 @@ ol {
 .links_color:hover{
 	color: #c4bdbd;
 }
+.links_color_new{
+	color: #c4bdbd;
+}
 .listGroup_card_width{
 	width: auto;
 }
@@ -3538,4 +3541,10 @@ ol {
 }
 .video_width{
 	width: 100%;
+}
+.card.item-card{
+	height: 100%;
+}
+.catalogue_images{
+	height: 100%;
 }

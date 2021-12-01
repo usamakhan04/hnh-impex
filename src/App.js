@@ -14,11 +14,16 @@ import '../src/assets/css/skeleton.css'
 // import '../src/assets/css/ui.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter,Routes, Route} from 'react-router-dom'
-import About from './components/About';
-import Products from './components/Products';
-import Catalogue from './components/Catalogue';
-import Contact from './components/Contact';
-import Home from './Home';
+
+// /* HEADER MENU STARTS HERE */
+import About from './Views/About';
+import Products from './Views/Products';
+import Catalogue from './Views/Catalogue';
+import Contact from './Views/Contact';
+import Home from './Views/Home';
+// /* HEADER MENU ENDS HERE */
+
+// /* DENTAL CATEGORY STARTS HERE >>>>>>>  */
 import DentalInstruments from './categories/Dental_Instruments/Dental_Instrument_Pages/DentalInstruments';
 import ExtractingForceps from './categories/Dental_Instruments/Dental_Instrument_Pages/ExtractingForceps';
 import RootElevators from './categories/Dental_Instruments/Dental_Instrument_Pages/RootElevators';
@@ -45,6 +50,10 @@ import Articulators from './categories/Dental_Instruments/Dental_Instrument_Page
 import Hollowares from './categories/Dental_Instruments/Dental_Instrument_Pages/Hollowares';
 import MatrixRetainersAndMatrixBands from './categories/Dental_Instruments/Dental_Instrument_Pages/MatrixRetainersAndMatrixBands';
 import Rongeurs from './categories/Dental_Instruments/Dental_Instrument_Pages/Rongeurs';
+// /* DENTAL CATEGORY ENDS HERE >>>>>>>  */
+
+
+// /* SURGICAL CATEGORY STARTS HERE >>>>>>>  */
 import SurgicalInstrument from './categories/Surgical_Instruments/Surgical_Instrument_Pages/SurgicalInstrument';
 import Diagnostic from './categories/Surgical_Instruments/Surgical_Instrument_Pages/Diagnostic';
 import Scalpels from './categories/Surgical_Instruments/Surgical_Instrument_Pages/Scalpels';
@@ -73,8 +82,9 @@ import PlasterInstruments from './categories/Surgical_Instruments/Surgical_Instr
 import SuctionInstruments from './categories/Surgical_Instruments/Surgical_Instrument_Pages/SuctionInstruments';
 import HospitalWares from './categories/Surgical_Instruments/Surgical_Instrument_Pages/HospitalWares';
 import ScissorsWithTungston from './categories/Surgical_Instruments/Surgical_Instrument_Pages/ScissorsWithTungston';
+// /* SURGICAL CATEGORY ENDS HERE >>>>>>>  */
 
-
+import VeterinaryInstrument from'./categories/Veterinary_Instruments/Veterinary_Instrments_Pages/VeterinaryInstrument.js'
 
 function App() {
   return (
@@ -153,6 +163,8 @@ function App() {
           <Route path="/ScissorsWithTungston" element={<ScissorsWithTungston/>}/>
 
          {/* SURGICAL CATEGORY ROUTING ENDS HERE <<<<<<<<<  */}
+
+         <Route path="/VeterinaryInstrument" element={<VeterinaryInstrument />}/>
 
         {/* <Route path="/about" component={}></Route> */}
       </Routes>
