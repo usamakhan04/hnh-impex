@@ -1,11 +1,15 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Navbar, Container, Nav, NavDropdown, Brand, Toggle, Collapse, } from 'react-bootstrap'
 import LoginIcon from '@mui/icons-material/Login';
 import AddIcon from '@mui/icons-material/Add';
 
 import { Link } from 'react-router-dom'
 
+
 function Header() {
+
+    const [current, setCurrent] = useState(false);
+    console.log(current)
     return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -19,8 +23,10 @@ function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link><Link className="links_color" to="/About">ABOUT</Link></Nav.Link>
-                            <Nav.Link><Link className="links_color" to="/products">PRODUCTS</Link></Nav.Link>
+                            <Nav.Link><Link  className="links_color" to="/About">ABOUT</Link></Nav.Link>
+
+                            <Nav.Link ><Link className="links_color" to="/products">PRODUCTS</Link></Nav.Link>
+
                             <Nav.Link><Link className="links_color" to="/catalogue">CATALOGUE</Link></Nav.Link>
                             <Nav.Link><Link className="links_color" to="/contact">CONTACTS</Link></Nav.Link>
                             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
