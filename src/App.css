@@ -3563,10 +3563,14 @@ ol {
 .inp5{
     animation: mymove 3s infinite;
 }
+.inp9{
+    animation: mymove 5s infinite;
+}
 @keyframes mymove {
     50% {
-       box-shadow: 10px 20px 30px rgb(72, 73, 70);
+       box-shadow: 10px 20px 30px rgb(169, 223, 63);
    }
 }
+
 
 /* Hover End */

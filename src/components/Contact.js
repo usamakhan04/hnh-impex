@@ -134,12 +134,12 @@ const Contact = () => {
                                 </div>
 
 
-                                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center">
+                                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center inp9">
                                     
 
                                             <Nav>
                                                 
-                                                <Row style={{marginTop:35}}>
+                                                <Row style={{marginTop:35 }}>
                                                     <Col >
                                                 <Navbar.Brand ><Link style={{ color: '#b6b8b6', textDecoration: 'none' }} to="#"><b>website</b>: www.handhimpex.com</Link></Navbar.Brand>
                                                     </Col>
