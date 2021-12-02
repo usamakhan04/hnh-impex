@@ -6,10 +6,10 @@ function Head() {
     return (
         <div>
             <div className="top-row">
-                <div className="container">
-                    <div className="grid">
+                <div className="container_24">
+                    <div className="grid_24">
                         <div className="logo">
-                            <a href="index-2.html" id="logo">
+                            <a href="/" id="logo">
                                 <img src="./surgical_categories/logo.png" alt="Medical Equipment" title />
                             </a>
                             <p className="tagline" />

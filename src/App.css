@@ -3525,9 +3525,6 @@ ol {
 .links_color:hover{
 	color: #c4bdbd;
 }
-.links_color_new{
-	color: #c4bdbd;
-}
 .listGroup_card_width{
 	width: auto;
 }
@@ -3541,12 +3538,6 @@ ol {
 }
 .video_width{
 	width: 100%;
-}
-.card.item-card{
-	height: 100%;
-}
-.catalogue_images{
-	height: 100%;
 }
 
  /* Hover start */
@@ -3572,14 +3563,10 @@ ol {
 .inp5{
     animation: mymove 3s infinite;
 }
-.inp9{
-    animation: mymove 5s infinite;
-}
 @keyframes mymove {
     50% {
-       box-shadow: 10px 20px 30px rgb(169, 223, 63);
+       box-shadow: 10px 20px 30px rgb(72, 73, 70);
    }
 }
-
 
 /* Hover End */

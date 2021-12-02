@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from './Footer';
-import Head from './Head';
-import Header from './Header';
+import Footer from '../components/Footer';
+import Head from '../components/Head';
+import Header from '../components/Header';
 import { Card, Row, Col } from 'react-bootstrap'
 import { Navbar, Container, Nav, NavDropdown, Brand, Toggle, Collapse, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -134,7 +134,7 @@ const Contact = () => {
                                 </div>
 
 
-                                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center inp9">
+                                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="justify-content-center">
                                     
 
                                             <Nav>
