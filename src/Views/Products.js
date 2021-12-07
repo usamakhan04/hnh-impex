@@ -5,6 +5,7 @@ import Head from "../components/Head";
 import { Card, ListGroup } from "react-bootstrap";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const Products = () => {
   return (
@@ -88,13 +89,17 @@ const Products = () => {
             </div>
             <div className="col-lg-9">
               <div className="">
+                <h1 className="header-title1">ALL PRODUCTS</h1>
+                <hr />
                 <Cards />
+                
               </div>
             </div>
           </div>
         </div>
         <br />
       </section>
+      <Footer />
     </div>
   );
 };
